@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apresentação motos</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        div#titulo{
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
-    <h1>Apresentação da Hornet</h1>
+    <div id="titulo">
+        <h1 id="texto">Apresentação da Hornet</h1>
+    </div>
+    
     <h2>Hornet, a lenda das 600cc</h2>
     <img src="hornet 3 geracao 500p.jpg" alt="Foto Hornet">
     <h2>Gsx-750 preta, indiscutivelmente a mais linda da categoria</h2>
@@ -15,6 +23,14 @@
     <p>com 749cc, essa moto é o sonho de muito motociclista</p>
     <script>
         window.alert("compre sua moto parcelada sem juros")
+        let titulo = document.getElementById("texto")
+        titulo.addEventListener('click', entrou())
+       
+        function entrou(){
+            let tit=document.getElementById('texto')
+            titulo.style.color='red'
+        }
+            
     </script>
 </body>
 </html>
